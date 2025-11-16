@@ -1,0 +1,104 @@
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+@import "css/_skin-vars.scss";
+
+
+/* Custom Class */
+body:not(.elementor-editor-active) {
+    .no-select img {
+        user-select: none;
+        pointer-events: none;
+    }
+}
+
+
+// 404 and search
+.search-no-results .page_content_wrap,
+.error404 .page_content_wrap {
+    background-color: var(--theme-color-bg_color);
+}
+
+// 404
+.post_item_404 {
+    .post_content {
+        padding-top: 4em;
+    }
+
+    .page_title {
+        font-size: 21vw;
+        font-weight: 200;
+    }
+}
+
+/* Iconed Text */
+.sc_layouts_row_type_compact .sc_layouts_iconed_text:not(.sc_layouts_menu_mobile_button):not(.sc_layouts_menu_mobile_button_burger) .sc_layouts_item_details {
+    font-size: 20px;
+    line-height: 1.35em;
+    font-weight: 600;
+}
+
+
+// Testimonials
+// Extra
+body:not(.mobile_layout) .sc_testimonials_extra .slider_container[data-slides-per-view="3"] {
+    .swiper-slide-duplicate-active + .swiper-slide-duplicate-next .sc_testimonials_item_content,
+    .swiper-slide-active + .swiper-slide-next .sc_testimonials_item_content,
+    .swiper-slide-next .sc_testimonials_item_content {
+        background-color: var(--theme-color-text_link);
+
+        &:after {
+            background-color: var(--theme-color-text_link);
+        }
+    }
+}
+.sc_testimonials_extra .sc_testimonials_item .sc_testimonials_item_content::before {
+    color: var(--theme-color-text_link);
+}
+
+// Accent
+.sc_testimonials_accent .sc_testimonials_item::before {
+    color: var(--theme-color-text_link);
+}
+
+.sc_testimonials_classic .sc_testimonials_item_content::before {
+    color: var(--theme-color-text_link);
+}
+
+// CF7
+div.wpcf7 .form-style-4 {
+    .columns_wrap > [class*="column-"] {
+        padding-bottom: 15px;
+    }
+}
+
+// Single post
+.post_item_single.post iframe {
+    @include border-radius(10px);
+}
+
+// Single Service
+.services_single .sc_widget_video {
+    iframe {
+        @include border-radius(10px);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 1.65em;
+    }
+}
+
+// 1279
+@media #{$media_lg} {
+    // 404
+    .post_item_404 .page_title {
+        font-size: 25vw;
+    }
+}
+
+// 767
+@media #{$media_sm} {
+  // 404
+  .post_item_404 .page_title {
+    font-size: 150px;
+  }
+}
