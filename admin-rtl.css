@@ -1,0 +1,133 @@
+/* About Theme */
+.tuning_about {
+	margin: 2em 0 0 2em;
+}
+
+/* Theme Options */
+.tuning_options_item[class*="column-"] {
+	padding: 1.25em 0 1.25em 2em;
+}
+.tuning_list_choice_item {
+	margin-left: 20px;
+	margin-right: 0;
+}
+.tuning_options_header {
+	margin: 1em 0 0 20px;
+}
+.tuning_options_title {
+	float: right;
+}
+.tuning_options_item_info {
+	border-right: 0 !important;
+}
+.tuning_options_item_title {
+	padding-left: 30px;
+	padding-right: 0;
+}
+.tuning_options_item_info .tuning_options_item_title,
+[class*="tuning_column-"] .tuning_options_item_title,
+[class*="tuning_column-"] .tuning_options_item_data {
+	text-align: right;
+}
+.tuning_range_slider_value {
+	margin-left: 10px !important;
+	margin-right: 0 !important;
+}
+.tuning_options_buttons {
+	float: left;
+	text-align: left;
+}
+.tuning_options .tuning_options_button:before {
+	margin: -1px 0 0 0.3em;
+}
+div.tuning_tabs_vertical > ul.ui-tabs-nav > li.ui-state-active {
+	border-right: 3px solid #11a0d2;
+	border-left: 0;
+}
+div.tuning_tabs_vertical > ul.ui-tabs-nav > li.ui-state-active > a.ui-tabs-anchor {
+	right: 1px;
+	left: auto;
+	padding-right: 10px;
+	padding-left: 13px;
+}
+div.tuning_tabs > ul.ui-tabs-nav > li > a > i[class*="dashicons-"],
+div.tuning_tabs > ul.ui-tabs-nav > li > a > i[class*="icon-"] {
+	margin: 0 0 0 0.5em;
+}
+div.tuning_tabs_vertical > ul.ui-tabs-nav > li.tuning_tabs_title_super > a.ui-tabs-anchor {
+	padding-left: 2em;
+	padding-right: 13px;
+}
+div.tuning_tabs_vertical > ul.ui-tabs-nav > li.tuning_tabs_title_super:after {
+	content: '\e858';
+	left: 12px;
+	right: auto;
+}
+div.tuning_tabs_vertical > ul.ui-tabs-nav > li.tuning_tabs_title_sub > a.ui-tabs-anchor,
+div.tuning_tabs_vertical > ul.ui-tabs-nav > li.tuning_tabs_title_sub.ui-state-active > a.ui-tabs-anchor {
+	padding: 0.6em 2.95em 0.6em 0.6em;
+}
+.tuning_range_slider_units {
+	margin-right: -8px;
+	margin-left: 0;
+}
+.tuning_options_item_radio .tuning_options_item_holder,
+.tuning_options input[type="radio"] + .tuning_options_item_holder {
+	margin-left: 0.5em;
+	margin-right: 0;
+}
+.tuning_options_item_radio .tuning_options_item_label {
+	margin: 0 0 0 1em;
+}
+.tuning_checklist.tuning_sortable .tuning_checklist_item_label {
+	padding: 6px 6px 6px 2.5em;
+}
+.tuning_options_item_checkbox input[type="checkbox"],
+.tuning_options_item_checklist input[type="checkbox"] {
+	margin-left: 0.5em;
+	margin-right: 0;
+}
+.tuning_options_item_checkbox input[type="checkbox"]:checked:before,
+.tuning_options_item_checklist input[type="checkbox"]:checked:before {
+	right: 50%;
+	left: auto;
+	-webkit-transform: translate(50%, -50%);
+	-ms-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+}
+.tuning_checklist.tuning_sortable .tuning_checklist_item_label:after {
+	left: 12px;
+	right: auto;
+}
+.tuning_scheme_editor_scheme {
+	padding-left: 105px;
+	padding-right: 0;
+}
+.tuning_scheme_editor_controls {
+	left: 0;
+	right: auto;
+}
+.tuning_scheme_editor_control {
+	margin-right: 2px;
+	margin-left: 0;
+}
+.tuning_options_inherit_off .tuning_options_inherit_lock {
+	left: 4px;
+	right: auto;
+}
+.tuning_options_inherit_lock {
+	left: 2px;
+	right: auto;
+}
+.tuning_options_item_image .tuning_media_selector,
+.tuning_options_item_media .tuning_media_selector,
+.tuning_options_item_audio .tuning_media_selector,
+.tuning_options_item_video .tuning_media_selector {
+	float: none !important;
+}
+
+@media (min-width: 601px) {
+	.tuning_options_header.sticky {
+		margin: 0 -20px 0 0;
+	}
+}
